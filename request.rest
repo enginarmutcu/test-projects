@@ -1,0 +1,48 @@
+GET http://localhost:3000/posts 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTkyNDkyNzI1LCJleHAiOjE1OTI0OTM2MjV9.cMMfMyVvla1wfqH6VeonMWUE3XnMMePZH_4d5oW0gdo
+###
+GET http://localhost:3000/allPosts 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTkyNDkyNzI1LCJleHAiOjE1OTI0OTM2MjV9.cMMfMyVvla1wfqH6VeonMWUE3XnMMePZH_4d5oW0gdo
+
+###
+POST http://localhost:3000/addPost
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTkyNDkyNzI1LCJleHAiOjE1OTI0OTM2MjV9.cMMfMyVvla1wfqH6VeonMWUE3XnMMePZH_4d5oW0gdo
+Content-Type: application/json
+
+{
+    "username" : "a",
+    "title":"engin@adbtech.com"
+}
+###
+DELETE http://localhost:4000/logout 
+Content-Type: application/json
+
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTY4NzU5OTIyfQ.RT6wszuCeFLwC_6ksmNMIELxiC5s-uRivfRxyZof5ag"
+}
+
+###
+
+POST http://localhost:4000/token 
+Content-Type: application/json
+
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNTkyNDgxOTg4fQ.SnKc-O6B24n7kIHLRzPbg1lWx8Bnli64A1YRbPuS2hU"
+}
+
+###
+
+POST http://localhost:4000/login 
+Content-Type: application/json
+
+{
+"username": "Jim"
+}
+###
+POST https://doktoryanimda.net/login
+Content-Type: application/json
+
+{
+    "email":"test",
+    "password":"adt123"
+}
